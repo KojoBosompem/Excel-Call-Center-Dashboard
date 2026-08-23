@@ -14,23 +14,35 @@
 
 
 ## Project Overview
-This project focuses on visualising 5 Key Performance Indicators of a company’s Call Centre. These indicators include Total Calls, Duration of All Calls, all 5−Star Calls, and Revenue Generated. It also provides insights into call trends for each month of the year, call trends by gender (Male and Female), and the most productive Call Representatives amongst a host of other crucial insights. It includes an interactive dashboard that displays key performance indicators at a glance for stakeholders to read easily. After cleaning the data and performing some calculations, I made use of numerous Pivot Tables and Pivot Charts and connected them to a Slicer.
+This project analyzes 200,000 sales and marketing call center records from January to December 2024. The goal was to evaluate agent performance, call outcomes, product effectiveness, customer abandonment reasons, and operational efficiency.
+The dataset contains detailed call-level information including agent details, products discussed (Loans, Internet Package, Electronics, Travel Package, Insurance), call duration, outcome (Success / Failure / Abandoned), customer demographics, income bracket, time of day, follow-up requirements, and reasons for abandoned calls.
+A full interactive Dashboard and supporting Analysis sheet were built in Excel to monitor key performance indicators (KPIs) and surface actionable insights for sales and operations leadership.
+
+
 ## Data Sources
 The data for this project was sourced from Kaggle. A world-renowned website for all types of free yet real business data for all types of analysis. The primary dataset for this project is the Call Centre Data csv file, which contains columns such as **Call Representative**, **Customer ID**, **Call Duration**, **Date of Call**, **Customer Number**, **Satisfaction Rating**, and other calculated columns.
 
+
 ## Tools Used
-- Microsoft Excel. Only Microsoft Excel was used from beginning to end in this project.
-  - [Download Microsoft Excel Here](https://microsoft.com).
-- Microsoft Excel was used for Data Preparation and Cleaning.
-- Microsoft Excel was also used for  Exploratory Data Analysis.
-- Lastly, Microsoft Excel  to Visualise Charts.
-  
+- Microsoft Excel (with macros – .xlsm)
+    - [Download Microsoft Excel Here](https://microsoft.com)
+- Power Query (data cleaning & transformation)
+- Pivot Tables & Excel formulas (aggregations, success rates, trends)
+- Excel Charts & Dashboard design
+- Python (pandas, matplotlib, seaborn) – used to recreate and enhance dashboard visuals for this portfolio
+
+ 
 ## Data Preparation and Cleaning
 In this part of the project I performed the following tasks;
-1. Data Loading and inspection.
-2. Removing white spaces.
-3. Formatting columns to their right data types.
-4. Replacing missing and NULL values in numerical columns with the mean.
+1. Loaded 200,000 rows × 19 columns from the raw Call Center Data sheet.
+2. Handled missing values systematically:
+3. Abandoned calls (≈22.3%) correctly had nulls for Product_Discussed, Agent_Rating, and Call_Duration_Minutes.
+4. Reason_Call_Abandoned was null for successful and failed calls (expected).
+5. Cleaned inconsistent text values in abandonment reasons (long Wait Time vs Long Wait Time → standardized to lowercase).
+6. Created a clean full agent name field from Agent_First_Name + Agent_Last_Name.
+7. Converted Date to proper datetime and extracted Month for trend analysis.
+8. No major duplicate Call_IDs that affected analysis (IDs appear to be short codes rather than unique identifiers).
+
 
 ## Exploratory Data Analysis (EDA)
 This involved exploring the Call Centre Data to find insights into Key Performance Metrics
