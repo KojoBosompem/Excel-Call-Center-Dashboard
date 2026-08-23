@@ -46,15 +46,27 @@ In this part of the project I performed the following tasks;
 
 ## Exploratory Data Analysis (EDA)
 This involved exploring the Call Centre Data to find insights into Key Performance Metrics
-1. What is the **Total Call Count** for all Call Representatives?
-2. What is the **Total Call Duration** for all Call Representatives?
-3. What is the **Average Call Rating** for each call made?
-4. How many **5-Star Calls** were recorded?
-5. What is the **Weekly Call Trend**?
-6. What is the **Monthly Call Trend**?
-7. Who is the **Best-Performing Call Representative** by **Total Call Attended To**, **5-Star Calls Ratings Received**, and **Total Revenue Generated** among others.
+1. **Call Outcomes:** Success 41.8%, Failure 35.9%, Abandoned 22.3%.
+2. **Products:** Loans and Internet Package dominate volume; all products show similar success rates (~53–54%) among non-abandoned calls.
+3. **Time of Day:** Afternoon has the highest volume, followed by Morning. Evening is significantly lower.
+4. **Customer Profile:** Predominantly Male (≈70%), Middle-income bracket most common, average customer age ≈26 years.
+5. **Agent Performance:** 13 agents in the dataset; average rating ≈4.25/5. Ratings are very consistent across Success and Failure outcomes.
+6. **Abandonment:** Over 94% of abandoned calls are due to long wait times (after cleaning).
+7. **Geographic concentration:** New York, California, North Carolina, Nevada, and Texas account for the largest call volumes.
+
 
 ## Data Analysis
+Key analyses performed:
+- Success rate by product (excluding abandoned calls)
+- Average call duration and agent rating by outcome
+- Abandonment reason breakdown
+- Call volume and success rate by time of day and income bracket
+- Monthly call volume trends throughout 2024
+- Follow-up requirement rate (≈70% of all calls)
+- Repeat customer rate (≈25%)
+- State-level volume and success rate comparison
+The Analysis sheet contains supporting calculations, lookup tables, and dynamic formulas that feed the Dashboard.
+
 
 ## Results/Findings
 
