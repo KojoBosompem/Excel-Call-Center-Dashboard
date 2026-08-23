@@ -69,13 +69,33 @@ The Analysis sheet contains supporting calculations, lookup tables, and dynamic 
 
 
 ## Results/Findings
+•	Overall success rate is 41.8%. When excluding abandoned calls, success rises to ≈53.8%.
+•	Long wait time is by far the dominant reason for abandoned calls (≈94%).
+•	Average call duration is slightly higher on successful calls (17.5 min) than failed calls (16.2 min).
+•	Agent ratings are high and consistent (mean ≈4.25/5) with little difference between successful and failed calls.
+•	Follow-up is required on roughly 70% of calls regardless of outcome.
+•	Call volume is highest in the Afternoon; success rates are nearly identical across Morning, Afternoon, and Evening.
+•	New York has both the highest volume and a relatively strong success rate.
+
 
 ## Recommendations
+1.	Reduce wait times – This is the single biggest opportunity. Addressing long wait times could significantly lower the 22.3% abandonment rate.
+2.	Investigate staffing levels during peak Afternoon hours.
+3.	Review the high follow-up rate (70%) – determine whether processes can be improved to resolve more issues on the first call.
+4.	Focus coaching and quality monitoring on the small number of agents (only 13 in the dataset) rather than broad training.
+5.	Loans and Internet Package are the highest-volume products with solid success rates – consider prioritizing agent capacity and scripts for these products.
+6.	Monitor state-level performance (especially high-volume states) for localized process or training improvements.
+
 
 ## Limitations
+•	No customer satisfaction score (CSAT/NPS) beyond the agent rating.
+•	No information on call queue time or exact wait duration before abandonment.
+•	Agent identifiers are limited (only 13 unique agents), which may not represent a full-scale call center.
+
 
 ## References
-
+•	Source data: Sales and Marketing Call Center.xlsm (Call Center Data, Analysis, and Dashboard sheets)
+•	Analysis performed in Microsoft Excel and Python (pandas + matplotlib)
 
 
 
